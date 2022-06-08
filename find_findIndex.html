@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMA Script</title>
+</head>
+<body>
+    <h1>Find FindIndex</h1>
+    <script>
+        // let data =[20,30,10,40,50,1];
+
+        // function custom(item){
+        //     return item<50;
+        // }
+
+        //find
+        // let result = data.find(function(item){
+        //     return item<30;
+        // });
+
+        //FindIndex
+        // let result = data.findIndex(function(item){
+        //     return item<10;
+        // });
+
+        // let result=data.find(custom);
+        // console.warn(result);
+
+        let data = [
+            {id:10, name:'a'},
+            {id:8, name:'b'},
+            {id:50, name:'c'},
+            {id:9, name:'d'},
+            {id:100, name:'f'}
+        ];
+        let result = data.find((item)=>{
+            return item.name>50;
+        });
+        console.warn(result);   
+    </script>
+</body>
+</html>

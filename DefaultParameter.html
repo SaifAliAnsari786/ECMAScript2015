@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ECMA script</title>
+</head>
+<body>
+    <h1>Default Parameter</h1>
+    <script>
+        //With out parameter
+        // function add(){
+        //     return 10+20;
+        // }
+        // console.log(add());
+
+        // With parameter
+        // function add(a,b){
+        //     return a+b;
+        // }
+        // console.log(add(10,30));
+
+        // With Default Parameter
+        // function add(a,b=40,c=10){
+        //     return a+b+c;
+        // }
+        // console.log(add(10));
+
+        // Funtion value pass with parameter
+        // function someValue(){
+        //     return 100;
+        // }
+        // function add(a, b=40, c=someValue()){
+        //     return a+b+c;
+        // }
+        // console.log(add(10));
+
+         // Funtion value pass using parameter with string
+        //  function someValue(){
+        //     return "last";
+        // }
+        // function add(a, b="second", c=someValue()){
+        //     return a +" " + b +" "+c;
+        // }
+        // console.log(add("first"));
+
+        function main(a,b=main()){
+            return a+b;
+        }
+        main();
+    </script>
+</body>
+</html>
