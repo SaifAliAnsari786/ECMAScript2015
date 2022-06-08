@@ -11,22 +11,22 @@
     <script>
         // let data =[20,30,10,40,50,1];
 
-        // function custom(item){
-        //     return item<50;
-        // }
+        function custom(item){
+            return item<50;
+        }
 
         //find
-        // let result = data.find(function(item){
-        //     return item<30;
-        // });
+        let result = data.find(function(item){
+            return item<30;
+        });
 
         //FindIndex
-        // let result = data.findIndex(function(item){
-        //     return item<10;
-        // });
+        let result1 = data.findIndex(function(item){
+            return item<10;
+        });
 
-        // let result=data.find(custom);
-        // console.warn(result);
+        let result2=data.find(custom);
+        console.warn(result);
 
         let data = [
             {id:10, name:'a'},
@@ -35,7 +35,7 @@
             {id:9, name:'d'},
             {id:100, name:'f'}
         ];
-        let result = data.find((item)=>{
+        let result3 = data.find((item)=>{
             return item.name>50;
         });
         console.warn(result);   
